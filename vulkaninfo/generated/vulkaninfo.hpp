@@ -514,7 +514,7 @@ void DumpVkShaderFloatControlsIndependence(Printer &p, std::string name, VkShade
         p.PrintKeyString(name, VkShaderFloatControlsIndependenceString(value));
     }
 }
-std::vector<const char *>VkCompositeAlphaFlagBitsKHRGetStrings(VkCompositeAlphaFlagBitsKHR value) {
+std::vector<const char *> VkCompositeAlphaFlagBitsKHRGetStrings(VkCompositeAlphaFlagBitsKHR value) {
     std::vector<const char *> strings;
     if (value == 0) { strings.push_back("None"); return strings; }
     if (VK_COMPOSITE_ALPHA_OPAQUE_BIT_KHR & value) strings.push_back("COMPOSITE_ALPHA_OPAQUE_BIT_KHR");
@@ -542,7 +542,7 @@ void DumpVkCompositeAlphaFlagBitsKHR(Printer &p, std::string name, VkCompositeAl
     p.PrintKeyString(name, strings.at(0));
 }
 
-std::vector<const char *>VkDeviceGroupPresentModeFlagBitsKHRGetStrings(VkDeviceGroupPresentModeFlagBitsKHR value) {
+std::vector<const char *> VkDeviceGroupPresentModeFlagBitsKHRGetStrings(VkDeviceGroupPresentModeFlagBitsKHR value) {
     std::vector<const char *> strings;
     if (value == 0) { strings.push_back("None"); return strings; }
     if (VK_DEVICE_GROUP_PRESENT_MODE_LOCAL_BIT_KHR & value) strings.push_back("DEVICE_GROUP_PRESENT_MODE_LOCAL_BIT_KHR");
@@ -570,7 +570,7 @@ void DumpVkDeviceGroupPresentModeFlagBitsKHR(Printer &p, std::string name, VkDev
     p.PrintKeyString(name, strings.at(0));
 }
 
-std::vector<const char *>VkFormatFeatureFlagBitsGetStrings(VkFormatFeatureFlagBits value) {
+std::vector<const char *> VkFormatFeatureFlagBitsGetStrings(VkFormatFeatureFlagBits value) {
     std::vector<const char *> strings;
     if (value == 0) { strings.push_back("None"); return strings; }
     if (VK_FORMAT_FEATURE_SAMPLED_IMAGE_BIT & value) strings.push_back("FORMAT_FEATURE_SAMPLED_IMAGE_BIT");
@@ -625,7 +625,7 @@ void DumpVkFormatFeatureFlagBits(Printer &p, std::string name, VkFormatFeatureFl
     p.PrintKeyString(name, strings.at(0));
 }
 
-std::vector<const char *>VkFormatFeatureFlagBits2KHRGetStrings(VkFormatFeatureFlagBits2KHR value) {
+std::vector<const char *> VkFormatFeatureFlagBits2KHRGetStrings(VkFormatFeatureFlagBits2KHR value) {
     std::vector<const char *> strings;
     if (value == 0) { strings.push_back("None"); return strings; }
     if (VK_FORMAT_FEATURE_2_SAMPLED_IMAGE_BIT_KHR & value) strings.push_back("FORMAT_FEATURE_2_SAMPLED_IMAGE_BIT_KHR");
@@ -683,7 +683,7 @@ void DumpVkFormatFeatureFlagBits2KHR(Printer &p, std::string name, VkFormatFeatu
     p.PrintKeyString(name, strings.at(0));
 }
 
-std::vector<const char *>VkImageUsageFlagBitsGetStrings(VkImageUsageFlagBits value) {
+std::vector<const char *> VkImageUsageFlagBitsGetStrings(VkImageUsageFlagBits value) {
     std::vector<const char *> strings;
     if (value == 0) { strings.push_back("None"); return strings; }
     if (VK_IMAGE_USAGE_TRANSFER_SRC_BIT & value) strings.push_back("IMAGE_USAGE_TRANSFER_SRC_BIT");
@@ -724,7 +724,7 @@ void DumpVkImageUsageFlagBits(Printer &p, std::string name, VkImageUsageFlagBits
     p.PrintKeyString(name, strings.at(0));
 }
 
-std::vector<const char *>VkMemoryHeapFlagBitsGetStrings(VkMemoryHeapFlagBits value) {
+std::vector<const char *> VkMemoryHeapFlagBitsGetStrings(VkMemoryHeapFlagBits value) {
     std::vector<const char *> strings;
     if (value == 0) { strings.push_back("None"); return strings; }
     if (VK_MEMORY_HEAP_DEVICE_LOCAL_BIT & value) strings.push_back("MEMORY_HEAP_DEVICE_LOCAL_BIT");
@@ -750,7 +750,7 @@ void DumpVkMemoryHeapFlagBits(Printer &p, std::string name, VkMemoryHeapFlagBits
     p.PrintKeyString(name, strings.at(0));
 }
 
-std::vector<const char *>VkMemoryPropertyFlagBitsGetStrings(VkMemoryPropertyFlagBits value) {
+std::vector<const char *> VkMemoryPropertyFlagBitsGetStrings(VkMemoryPropertyFlagBits value) {
     std::vector<const char *> strings;
     if (value == 0) { strings.push_back("None"); return strings; }
     if (VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT & value) strings.push_back("MEMORY_PROPERTY_DEVICE_LOCAL_BIT");
@@ -816,9 +816,8 @@ std::string VkQueueFlagsString(VkQueueFlags value) {
     }
     return out;
 }
-std::vector<const char *>VkResolveModeFlagBitsGetStrings(VkResolveModeFlagBits value) {
+std::vector<const char *> VkResolveModeFlagBitsGetStrings(VkResolveModeFlagBits value) {
     std::vector<const char *> strings;
-    if (value == 0) { strings.push_back("None"); return strings; }
     if (VK_RESOLVE_MODE_NONE & value) strings.push_back("RESOLVE_MODE_NONE");
     if (VK_RESOLVE_MODE_SAMPLE_ZERO_BIT & value) strings.push_back("RESOLVE_MODE_SAMPLE_ZERO_BIT");
     if (VK_RESOLVE_MODE_AVERAGE_BIT & value) strings.push_back("RESOLVE_MODE_AVERAGE_BIT");
@@ -845,7 +844,7 @@ void DumpVkResolveModeFlagBits(Printer &p, std::string name, VkResolveModeFlagBi
     p.PrintKeyString(name, strings.at(0));
 }
 
-std::vector<const char *>VkSampleCountFlagBitsGetStrings(VkSampleCountFlagBits value) {
+std::vector<const char *> VkSampleCountFlagBitsGetStrings(VkSampleCountFlagBits value) {
     std::vector<const char *> strings;
     if (value == 0) { strings.push_back("None"); return strings; }
     if (VK_SAMPLE_COUNT_1_BIT & value) strings.push_back("SAMPLE_COUNT_1_BIT");
@@ -876,7 +875,7 @@ void DumpVkSampleCountFlagBits(Printer &p, std::string name, VkSampleCountFlagBi
     p.PrintKeyString(name, strings.at(0));
 }
 
-std::vector<const char *>VkShaderStageFlagBitsGetStrings(VkShaderStageFlagBits value) {
+std::vector<const char *> VkShaderStageFlagBitsGetStrings(VkShaderStageFlagBits value) {
     std::vector<const char *> strings;
     if (value == 0) { strings.push_back("None"); return strings; }
     if (VK_SHADER_STAGE_VERTEX_BIT & value) strings.push_back("SHADER_STAGE_VERTEX_BIT");
@@ -917,7 +916,7 @@ void DumpVkShaderStageFlagBits(Printer &p, std::string name, VkShaderStageFlagBi
     p.PrintKeyString(name, strings.at(0));
 }
 
-std::vector<const char *>VkSubgroupFeatureFlagBitsGetStrings(VkSubgroupFeatureFlagBits value) {
+std::vector<const char *> VkSubgroupFeatureFlagBitsGetStrings(VkSubgroupFeatureFlagBits value) {
     std::vector<const char *> strings;
     if (value == 0) { strings.push_back("None"); return strings; }
     if (VK_SUBGROUP_FEATURE_BASIC_BIT & value) strings.push_back("SUBGROUP_FEATURE_BASIC_BIT");
@@ -950,7 +949,7 @@ void DumpVkSubgroupFeatureFlagBits(Printer &p, std::string name, VkSubgroupFeatu
     p.PrintKeyString(name, strings.at(0));
 }
 
-std::vector<const char *>VkSurfaceCounterFlagBitsEXTGetStrings(VkSurfaceCounterFlagBitsEXT value) {
+std::vector<const char *> VkSurfaceCounterFlagBitsEXTGetStrings(VkSurfaceCounterFlagBitsEXT value) {
     std::vector<const char *> strings;
     if (value == 0) { strings.push_back("None"); return strings; }
     if (VK_SURFACE_COUNTER_VBLANK_BIT_EXT & value) strings.push_back("SURFACE_COUNTER_VBLANK_BIT_EXT");
@@ -975,7 +974,7 @@ void DumpVkSurfaceCounterFlagBitsEXT(Printer &p, std::string name, VkSurfaceCoun
     p.PrintKeyString(name, strings.at(0));
 }
 
-std::vector<const char *>VkSurfaceTransformFlagBitsKHRGetStrings(VkSurfaceTransformFlagBitsKHR value) {
+std::vector<const char *> VkSurfaceTransformFlagBitsKHRGetStrings(VkSurfaceTransformFlagBitsKHR value) {
     std::vector<const char *> strings;
     if (value == 0) { strings.push_back("None"); return strings; }
     if (VK_SURFACE_TRANSFORM_IDENTITY_BIT_KHR & value) strings.push_back("SURFACE_TRANSFORM_IDENTITY_BIT_KHR");
@@ -1008,7 +1007,7 @@ void DumpVkSurfaceTransformFlagBitsKHR(Printer &p, std::string name, VkSurfaceTr
     p.PrintKeyString(name, strings.at(0));
 }
 
-std::vector<const char *>VkToolPurposeFlagBitsEXTGetStrings(VkToolPurposeFlagBitsEXT value) {
+std::vector<const char *> VkToolPurposeFlagBitsEXTGetStrings(VkToolPurposeFlagBitsEXT value) {
     std::vector<const char *> strings;
     if (value == 0) { strings.push_back("None"); return strings; }
     if (VK_TOOL_PURPOSE_VALIDATION_BIT_EXT & value) strings.push_back("TOOL_PURPOSE_VALIDATION_BIT_EXT");
@@ -1039,9 +1038,8 @@ void DumpVkToolPurposeFlagBitsEXT(Printer &p, std::string name, VkToolPurposeFla
     p.PrintKeyString(name, strings.at(0));
 }
 
-std::vector<const char *>VkVideoCodecOperationFlagBitsKHRGetStrings(VkVideoCodecOperationFlagBitsKHR value) {
+std::vector<const char *> VkVideoCodecOperationFlagBitsKHRGetStrings(VkVideoCodecOperationFlagBitsKHR value) {
     std::vector<const char *> strings;
-    if (value == 0) { strings.push_back("None"); return strings; }
     if (VK_VIDEO_CODEC_OPERATION_INVALID_BIT_KHR & value) strings.push_back("VIDEO_CODEC_OPERATION_INVALID_BIT_KHR");
     if (VK_VIDEO_CODEC_OPERATION_ENCODE_H264_BIT_EXT & value) strings.push_back("VIDEO_CODEC_OPERATION_ENCODE_H264_BIT_EXT");
     if (VK_VIDEO_CODEC_OPERATION_ENCODE_H265_BIT_EXT & value) strings.push_back("VIDEO_CODEC_OPERATION_ENCODE_H265_BIT_EXT");
